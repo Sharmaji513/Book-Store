@@ -1,0 +1,15 @@
+{
+  "name": "book-store",
+  "version": "1.0.0",
+  "description": "This is Coding Assignment\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sachin Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.8.4"
+  }
+}
