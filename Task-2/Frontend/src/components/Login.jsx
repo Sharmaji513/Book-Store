@@ -4,8 +4,8 @@ import axiosInstance from '../utils/axiosInstance';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const [username, setUsername] = useState('admin');
-  const [password, setPassword] = useState('admin123456');
+  const [username, setUsername] = useState('Admin');
+  const [password, setPassword] = useState('Admin@12345678');
   const [error, setError] = useState('');
   const [showPassword, setShowPassword] = useState(false); 
   const navigate = useNavigate();
