@@ -1,7 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const cookieParser = require('cookie-parser');
-const cors = require('cors'); // Import cors
+const cors = require('cors'); 
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoute');
 const bookRoutes = require('./routes/bookRoute');
@@ -10,13 +10,13 @@ dotenv.config();
 
 const app = express();
 
-// Middleware
-app.use(cors({ 
-  origin: 'http://localhost:5173/', 
+// Middleware for CORS -
+app.use(cors({
+  origin: 'http://localhost:5173', 
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-})); 
-
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true 
+}));
 app.use(express.json());
 app.use(cookieParser());
 

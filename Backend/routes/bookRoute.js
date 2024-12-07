@@ -14,7 +14,7 @@ router.get('/books', userAuth, async (req, res) => {
 });
 
 // Add a new book 
-router.post('/books', userAuth, async (req, res) => {
+router.post('/addbook', userAuth, async (req, res) => {
   const { title, author, publishedYear, genre } = req.body;
 
   if (!title || !author || !publishedYear || !genre) {
